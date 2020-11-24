@@ -1,1 +1,0 @@
-/Users/kumamoto/Documents/python_useful/main.py
