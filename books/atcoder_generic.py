@@ -1,0 +1,1 @@
+/Users/kumamoto/Documents/python_useful/atcoder_generic.py
