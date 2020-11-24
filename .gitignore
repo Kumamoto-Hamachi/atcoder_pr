@@ -2,3 +2,4 @@ output.dat
 ^a
 input.dat
 abc[0-9]*/exec.sh
+memo/
