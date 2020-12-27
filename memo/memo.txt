@@ -44,6 +44,8 @@ https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11129413206
 bit全探索、eval、論理演算
 - abc159
 ゴリ押しすぎる、他のコード確認必ずすること
+- abc160
+図に書いてみろ,一周-ある辺、あまりで次を表現
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
