@@ -38,12 +38,16 @@ https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11129413206
 累積和
 - abc176-c
 一つづずれ、比較用の変数用意すると良い(チェックは難しくなる)
-- abc87
+- abc87-c
 二重リスト、場合分け
-- abc79
+- abc79-c
 bit全探索、eval、論理演算
-- abc159
+- abc159-b
 ゴリ押しすぎる、他のコード確認必ずすること
+- abc160-c
+図に書いてみろ,一周-ある辺、あまりで次を表現
+- abc163-c
+TLEとならないようにするには、countの計算量は？
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
