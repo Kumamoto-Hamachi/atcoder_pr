@@ -6,8 +6,8 @@ do
 	if test ! -e ${i} -a -e ${i}*.py ; then
 		echo "${i}"
 		mkdir "${i}"
-		mv ${i}*.py ${i}/
-	elif test -e ${i}*.py ; then
+	fi
+	if test -e ${i}*.py ; then
 		mv ${i}*.py ${i}/
 	fi
 done
