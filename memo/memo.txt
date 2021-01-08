@@ -48,6 +48,14 @@ bit全探索、eval、論理演算
 図に書いてみろ,一周-ある辺、あまりで次を表現
 - abc163-c
 TLEとならないようにするには、countの計算量は？
+- abc165-d
+両方が整数のとき一致する、それはxがBのとき、不等号評価で考える
+- abc166-c
+計算量少なくするにはを考えなくていい？
+- abc165-c
+難しい,理解できていない
+- abc169-c
+小数の扱い
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
