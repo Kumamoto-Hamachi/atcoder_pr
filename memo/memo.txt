@@ -56,6 +56,8 @@ TLEとならないようにするには、countの計算量は？
 難しい,理解できていない
 - abc169-c
 小数の扱い
+- abc159-c
+計算式に
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
