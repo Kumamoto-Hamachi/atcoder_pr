@@ -58,6 +58,8 @@ TLEとならないようにするには、countの計算量は？
 小数の扱い
 - abc159-c
 計算式に
+- abc174-d
+素直に理想型考えよう、一番効率いいのは？
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
