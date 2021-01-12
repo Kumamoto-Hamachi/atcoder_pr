@@ -62,6 +62,8 @@ TLEとならないようにするには、countの計算量は？
 進数ならどうするのが扱いやすい？
 - abc174-d
 素直に理想型考えよう、一番効率いいのは？
+- abc158-d
+何度も[::-1]するのってすごい計算量になるんだなぁ
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
