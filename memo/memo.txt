@@ -66,6 +66,10 @@ TLEとならないようにするには、countの計算量は？
 何度も[::-1]するのってすごい計算量になるんだなぁ
 - abc186-d
 absの特徴を考えろ
+- abc36-b
+gridの問題
+- abc36-c
+ワンライン、bufferオブジェクトの美しさ、c3.pyを見よう
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
