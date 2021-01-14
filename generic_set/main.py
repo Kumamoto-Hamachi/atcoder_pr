@@ -1,6 +1,5 @@
 import sys
-snput = lambda: sys.stdin.readline()
-# snput = lambda: sys.stdin.buffer.readline() # TODO
+snput = sys.stdin.buffer.readline
 m_snput = lambda: map(int, snput().split())
 
 if __name__ == "__main__":
