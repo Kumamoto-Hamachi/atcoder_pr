@@ -70,6 +70,10 @@ absの特徴を考えろ
 gridの問題
 - abc36-c
 ワンライン、bufferオブジェクトの美しさ、c3.pyを見よう
+- abc157-c
+例外をちゃんと考えて
+- abc183-d
+いもす
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
