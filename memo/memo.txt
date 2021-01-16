@@ -62,6 +62,18 @@ TLEとならないようにするには、countの計算量は？
 進数ならどうするのが扱いやすい？
 - abc174-d
 素直に理想型考えよう、一番効率いいのは？
+- abc158-d
+何度も[::-1]するのってすごい計算量になるんだなぁ
+- abc186-d
+absの特徴を考えろ
+- abc36-b
+gridの問題
+- abc36-c
+ワンライン、bufferオブジェクトの美しさ、c3.pyを見よう
+- abc157-c
+例外をちゃんと考えて
+- abc183-d
+いもす
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
