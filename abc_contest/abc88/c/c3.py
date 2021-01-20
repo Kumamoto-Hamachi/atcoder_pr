@@ -4,9 +4,6 @@ map_readlines = lambda: map(int, readlines())
 readline = sys.stdin.buffer.readline
 map_readline = lambda: map(int, readline().split())
 sreadline = lambda: readline().decode("utf-8")
-# read
-# snput = sys.stdin.buffer.readline
-# m_snput = lambda: map(int, snput().split())
 NUM = 3
 
 def calc_b_by_a1(a1, c_l):
@@ -28,18 +25,16 @@ def check_specified_a_is_same(b_l, c_l):
     return True
 
 
-# なぜa1を0と仮定しても問題ないのだろうか
 if __name__ == "__main__":
     c_l = [None] * NUM
     for i in range(NUM):
         c_l[i] = list(map_readline())
-    a1_op = c_l[0][0]
     a1 = 0
     b_l = calc_b_by_a1(a1, c_l)
     if check_specified_a_is_same(b_l, c_l):
         print("Yes")
-        sys.exit()
-    print("No")
+    else:
+        print("No")
 
     """
     input_str = snput()
