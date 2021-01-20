@@ -74,6 +74,8 @@ gridの問題
 例外をちゃんと考えて
 - abc183-d
 いもす
+- abc88-c
+a1を仮定するやり方これでいいの？
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
