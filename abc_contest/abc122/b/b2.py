@@ -7,7 +7,7 @@ if __name__ == "__main__":
     S = sreadline()
     ans = 0
     cnt = 0
-    for i, s in enumerate(S):
+    for s in S:
         if s in ACGT:
             cnt += 1
         else:
