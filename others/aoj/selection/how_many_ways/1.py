@@ -22,7 +22,9 @@ if __name__ == "__main__":
         combinations = list(itertools.combinations(n_l, 3))
         cnt = count_com_sum_is_specified_num(combinations, p)
         print(cnt)
+
     """
+    http://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=5155150#1
     input_str = snput()
     input_num = int(snput())
     some_map = m_snput()
