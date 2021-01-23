@@ -74,6 +74,10 @@ gridの問題
 例外をちゃんと考えて
 - abc183-d
 いもす
+- abc88-c
+a1を仮定するやり方これでいいの？
+- abc106-b
+素因数分解,約数,約数の数
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
