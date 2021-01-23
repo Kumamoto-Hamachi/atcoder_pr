@@ -78,6 +78,8 @@ gridの問題
 a1を仮定するやり方これでいいの？
 - abc106-b
 素因数分解,約数,約数の数
+- abc189-c
+再帰、分割統治
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
