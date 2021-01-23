@@ -1,3 +1,4 @@
+from pprint import pprint as pp
 import sys
 # readlines = sys.stdin.buffer.readlines
 # map_readlines = lambda: map(int, readlines())
@@ -13,4 +14,6 @@ if __name__ == "__main__":
     input_str = snput()
     input_num = int(snput())
     some_map = m_snput()
+    data = sreadline().split(" ")
+    data = list(sreadline())
     """
