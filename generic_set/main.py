@@ -1,5 +1,6 @@
 from pprint import pprint as pp
 import sys
+sys.setrecursionlimit(10 ** 7)
 # readlines = sys.stdin.buffer.readlines
 # map_readlines = lambda: map(int, readlines())
 # readline = sys.stdin.buffer.readline
