@@ -82,6 +82,8 @@ a1を仮定するやり方これでいいの？
 再帰、分割統治、scrapbox未登録
 - パ研合宿2019-c
 全探索、次は配列作らずにやってみろ
+- abc122-b
+全探索or3pattern
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
