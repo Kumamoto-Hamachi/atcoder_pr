@@ -84,6 +84,10 @@ a1を仮定するやり方これでいいの？
 全探索、次は配列作らずにやってみろ
 - abc122-b
 全探索or3pattern
+- abc190-c
+試行のやり方何度も練習
+- abc190-d
+項数の場合分けで
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
