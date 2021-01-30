@@ -1,17 +1,18 @@
-from pprint import pprint as pp
-from collections import defaultdict
 import sys
-sys.setrecursionlimit(10 ** 7)
-readlines = sys.stdin.buffer.readlines
-map_readlines = lambda: map(int, readlines())
 readline = sys.stdin.buffer.readline
 map_readline = lambda: map(int, readline().split())
 sreadline = lambda: readline().decode("utf-8").rstrip()
-# read
-# snput = sys.stdin.buffer.readline
-# m_snput = lambda: map(int, snput().split())
 
 if __name__ == "__main__":
+    s, t = sreadline().split(" ")
+    a, b = map_readline()
+    ball_color = sreadline()
+    if s == ball_color:
+        a -= 1
+    else:
+        b -= 1
+    print(a, b)
+    # print([f"{a-1} {b}",f"{a} {b-1}"][t==input()])
     """
     input_str = snput()
     input_num = int(snput())
