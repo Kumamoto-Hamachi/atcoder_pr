@@ -21,12 +21,6 @@ def make_divisors(n):
 
     divisors.sort()
     return divisors
-A 0:06
-B 0:20
-C 0:33
-D 0:49
-E 1:11
-F 1:38
 
 # アテ勘で解いてしまった...解き直しすること
 if __name__ == "__main__":
