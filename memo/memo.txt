@@ -90,6 +90,8 @@ if使っても使わなくても出来るように
 試行のやり方何度も練習
 - abc190-d
 項数の場合分けで
+- square869120Contest-6-b
+中央値の性質、実装スピード
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
