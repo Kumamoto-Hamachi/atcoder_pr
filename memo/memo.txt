@@ -92,6 +92,8 @@ if使っても使わなくても出来るように
 項数の場合分けで
 - square869120Contest-6-b
 中央値の性質、実装スピード
+- abc154-d
+for文をキレイに、条件を満たすのはいつか落ち着いて考えてみて
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
