@@ -74,8 +74,8 @@ gridの問題
 例外をちゃんと考えて
 - abc183-d
 いもす
-- abc88-c
-a1を仮定するやり方これでいいの？
+- abc88-c 特に苦手
+a1を仮定するやり方これでいいの？、二重配列
 - abc106-b
 素因数分解,約数,約数の数
 - abc189-c
@@ -92,6 +92,14 @@ if使っても使わなくても出来るように
 項数の場合分けで
 - square869120Contest-6-b
 中央値の性質、実装スピード
+- abc154-d
+for文をキレイに、条件を満たすのはいつか落ち着いて考えてみて
+- abc187-c
+dict, (+α)classを使ってみよう、classではsetの管理者として扱う
+- joi_6_main 未解決
+全探索してもダメだった。。。
+
+
 # Python仕様
 - input()/
 - snput = lambda: sys.stdin.readline().rstrip()
