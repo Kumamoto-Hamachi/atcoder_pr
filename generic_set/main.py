@@ -13,9 +13,9 @@ sreadline = lambda: readline().decode("utf-8").rstrip()
 
 if __name__ == "__main__":
     """
-    input_str = snput()
-    input_num = int(snput())
-    some_map = m_snput()
+    input_str = readline()
+    input_num = int(readline())
+    some_map = map_readline()
     data = sreadline().split(" ")
     data = list(sreadline())
     """
