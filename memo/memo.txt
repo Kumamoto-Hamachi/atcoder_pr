@@ -102,6 +102,8 @@ dict, (+α)classを使ってみよう、classではsetの管理者として扱�
 頂点になる条件は？curonのコードも読むこと
 - abc153-d
 等比数列の和、再帰
+- SUMITRUST2019-d 
+逆転の発想、忘れたころにもう一度やってほしい
 
 # Python仕様
 - input()/
