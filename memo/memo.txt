@@ -104,6 +104,8 @@ dict, (+α)classを使ってみよう、classではsetの管理者として扱�
 等比数列の和、再帰
 - SUMITRUST2019-d 
 逆転の発想、忘れたころにもう一度やってほしい
+- aoj Fibonacci Number
+再帰だと解けないゾ
 
 # Python仕様
 - input()/
