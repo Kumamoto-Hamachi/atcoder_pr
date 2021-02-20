@@ -1,17 +1,21 @@
-from pprint import pprint as pp
-from collections import defaultdict
 import sys
-sys.setrecursionlimit(10 ** 7)
-readlines = sys.stdin.buffer.readlines
-map_readlines = lambda: map(int, readlines())
+import math
 readline = sys.stdin.buffer.readline
 map_readline = lambda: map(int, readline().split())
 sreadline = lambda: readline().decode("utf-8").rstrip()
-# read
-# snput = sys.stdin.buffer.readline
-# m_snput = lambda: map(int, snput().split())
 
 if __name__ == "__main__":
+    N = int(readline())
+    p_l = list(map_readline())
+    min_num = math.inf
+    cnt = 0
+    for p in p_l:
+        min_num = min(min_num, p)
+        if min_num == p:
+            cnt += 1
+    print(cnt)
+
+
     """
     input_str = readline()
     input_num = int(readline())
@@ -19,3 +23,4 @@ if __name__ == "__main__":
     data = sreadline().split(" ")
     data = list(sreadline())
     """
+

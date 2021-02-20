@@ -1,17 +1,24 @@
-from pprint import pprint as pp
-from collections import defaultdict
 import sys
-sys.setrecursionlimit(10 ** 7)
-readlines = sys.stdin.buffer.readlines
-map_readlines = lambda: map(int, readlines())
 readline = sys.stdin.buffer.readline
 map_readline = lambda: map(int, readline().split())
 sreadline = lambda: readline().decode("utf-8").rstrip()
-# read
-# snput = sys.stdin.buffer.readline
-# m_snput = lambda: map(int, snput().split())
+LIMIT = 45
 
+
+def fib(order, memo):
+    if order <= 1:
+        return 1
+    else:
+        if memo[order] == 0:
+            memo[order] = fib(order-1, memo) + fib(order-2, memo)
+        return memo[order]
+
+# メモ化再帰
 if __name__ == "__main__":
+    N = int(readline())
+    memo = [0] * LIMIT
+    ans = fib(N, memo)
+    print(ans)
     """
     input_str = readline()
     input_num = int(readline())
@@ -19,3 +26,4 @@ if __name__ == "__main__":
     data = sreadline().split(" ")
     data = list(sreadline())
     """
+

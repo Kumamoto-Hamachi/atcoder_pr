@@ -6,6 +6,6 @@ do
 	if test -e ${i}*.py ; then
 		echo "${i}"
 		mkdir -p "${i}"
-		mv -i ${i}*.py ${i}/
+		mv ${i}*.py ${i}/
 	fi
 done
