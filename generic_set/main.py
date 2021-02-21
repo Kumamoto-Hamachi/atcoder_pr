@@ -7,9 +7,6 @@ map_readlines = lambda: map(int, readlines())
 readline = sys.stdin.buffer.readline
 map_readline = lambda: map(int, readline().split())
 sreadline = lambda: readline().decode("utf-8").rstrip()
-# read
-# snput = sys.stdin.buffer.readline
-# m_snput = lambda: map(int, snput().split())
 
 if __name__ == "__main__":
     """
