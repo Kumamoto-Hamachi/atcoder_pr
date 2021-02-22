@@ -12,6 +12,7 @@ def fib(n):
     return fib_sequence
 
 
+# 動的計画法
 if __name__ == "__main__":
     N = int(readline())
     fib_sequence = fib(N)
