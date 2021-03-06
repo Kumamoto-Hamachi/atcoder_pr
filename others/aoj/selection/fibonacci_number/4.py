@@ -2,22 +2,24 @@ import sys
 readline = sys.stdin.buffer.readline
 map_readline = lambda: map(int, readline().split())
 sreadline = lambda: readline().decode("utf-8").rstrip()
+LIMIT = 45
+memo = [0] * LIMIT
 
 
 def fib(n):
-    fib_sequence = [1] * (n+1) # fib_sequence[0] = 1, fib_sequence[1] = 1
-    # fib_sequence[2]以降
-    for i in range(2, n+1):
-        fib_sequence[i] = fib_sequence[i-1] + fib_sequence[i-2]
-    return fib_sequence
+    if n <= 1:
+        return 1
+    else:
+        if memo[n] == 0:
+            memo[n] = fib(n-1) + fib(n-2)
+        return memo[n]
 
 
-# 動的計画法
+# メモ化再帰その2(グローバル変数の使用)
 if __name__ == "__main__":
     N = int(readline())
-    fib_sequence = fib(N)
-    print(fib_sequence[N])
-
+    num = fib(N)
+    print(num)
     """
     input_str = readline()
     input_num = int(readline())
@@ -25,4 +27,3 @@ if __name__ == "__main__":
     data = sreadline().split(" ")
     data = list(sreadline())
     """
-
