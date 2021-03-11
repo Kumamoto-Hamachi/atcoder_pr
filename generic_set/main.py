@@ -15,4 +15,5 @@ if __name__ == "__main__":
     some_map = map_readline()
     data = sreadline().split(" ")
     data = list(sreadline())
+    sreadlines = [sb.decode("utf-8").rstrip() for sb in readlines()]
     """
