@@ -8,6 +8,7 @@ readline = sys.stdin.buffer.readline
 map_readline = lambda: map(int, readline().split())
 sreadline = lambda: readline().decode("utf-8").rstrip()
 
+# b3のほうが美しい書き方
 if __name__ == "__main__":
     n = int(readline())
     a_l = list(map_readline())
