@@ -9,6 +9,21 @@ map_readline = lambda: map(int, readline().split())
 sreadline = lambda: readline().decode("utf-8").rstrip()
 
 if __name__ == "__main__":
+    weathers = sreadline()
+    w_l = weathers.split("S")
+    ans = max([len(r) for r in w_l])
+    print(ans)
+    """
+    weather_records = sreadline()
+    if "RRR" in weather_records:
+        print(3)
+    elif "RR" in weather_records:
+        print(2)
+    elif "R" in weather_records:
+        print(1)
+    else:
+        print(0)
+    """
     """
     input_str = readline()
     input_num = int(readline())
@@ -17,3 +32,4 @@ if __name__ == "__main__":
     data = list(sreadline())
     sreadlines = [sb.decode("utf-8").rstrip() for sb in readlines()]
     """
+

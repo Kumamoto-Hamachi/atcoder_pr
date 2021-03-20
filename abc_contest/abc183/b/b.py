@@ -9,6 +9,11 @@ map_readline = lambda: map(int, readline().split())
 sreadline = lambda: readline().decode("utf-8").rstrip()
 
 if __name__ == "__main__":
+    sx, sy, gx, gy = map_readline()
+    # ans = (gx - sx) / (sy + gy) * sy + sx
+    # 鏡像を作ってやる、内分点/外分点の公式の考え方
+    ans = (gx * sy + gy * sx) / (gy + sy)
+    print(ans)
     """
     input_str = readline()
     input_num = int(readline())
@@ -17,3 +22,4 @@ if __name__ == "__main__":
     data = list(sreadline())
     sreadlines = [sb.decode("utf-8").rstrip() for sb in readlines()]
     """
+

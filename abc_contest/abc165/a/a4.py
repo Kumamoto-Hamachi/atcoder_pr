@@ -1,14 +1,21 @@
-from pprint import pprint as pp
-from collections import defaultdict
 import sys
-sys.setrecursionlimit(10 ** 7)
-readlines = sys.stdin.buffer.readlines
-map_readlines = lambda: map(int, readlines())
 readline = sys.stdin.buffer.readline
 map_readline = lambda: map(int, readline().split())
-sreadline = lambda: readline().decode("utf-8").rstrip()
 
 if __name__ == "__main__":
+    K = int(readline())
+    A, B = map_readline()
+    print("OK" if B // K > (A - 1) // K else "NG")
+    """
+    K = int(readline())
+    A, B = map_readline()
+    under_a = (A // K) * K
+    if under_a + K <= B or under_a == A:
+        print("OK")
+    else:
+        print("NG")
+    """
+
     """
     input_str = readline()
     input_num = int(readline())
