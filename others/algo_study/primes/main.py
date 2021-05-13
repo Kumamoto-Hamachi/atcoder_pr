@@ -70,7 +70,9 @@ def prime_factorize_in_dict(num):
     return primes
 
 # 整数N以下の素数を全て発見(約数じゃないよ!) エラトステネスのふるい
+"""
 https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%A9%E3%83%88%E3%82%B9%E3%83%86%E3%83%8D%E3%82%B9%E3%81%AE%E7%AF%A9
+"""
 def get_sieve_of_eratosthenes(num):
     primes = [2]
     limit = math.floor(num ** 0.5)
