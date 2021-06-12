@@ -7,6 +7,7 @@ map_readlines = lambda: map(int, readlines())
 readline = sys.stdin.buffer.readline
 map_readline = lambda: map(int, readline().split())
 sreadline = lambda: readline().decode("utf-8").rstrip()
+sreadlines = lambda: [s.decode("utf-8").rstrip() for s in readlines()] # return strs per line list
 
 if __name__ == "__main__":
     """
@@ -15,5 +16,5 @@ if __name__ == "__main__":
     some_map = map_readline()
     data = sreadline().split(" ")
     data = list(sreadline())
-    sreadlines = [sb.decode("utf-8").rstrip() for sb in readlines()]
+    low_english_literature = " ".join(sreadlines())
     """
