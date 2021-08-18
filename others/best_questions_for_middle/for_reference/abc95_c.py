@@ -5,6 +5,7 @@ def sreadline(): return readline().decode("utf-8").rstrip()
 
 
 if __name__ == "__main__":
+    # 一意にきまる
     a, b, c, x, y = map_readline()
     min_cost = a * x + b * y
     max_c_pizza = max(x, y) * 2
