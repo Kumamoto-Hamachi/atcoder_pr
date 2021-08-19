@@ -1,5 +1,5 @@
 output.dat
 ^a
-input.dat
+*input.dat*
 abc[0-9]*/exec.sh
 /others/pra
