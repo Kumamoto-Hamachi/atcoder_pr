@@ -88,3 +88,67 @@ if __name__ == "__main__":
         
     print(dfs([]))
 """
+
+""" 別解2 boolean_listの扱いをよく間違える.そこから自分の弱点を自覚しろ.
+import sys
+readline = sys.stdin.buffer.readline
+def map_readline(): return map(int, readline().split())
+def sreadline(): return readline().decode("utf-8").rstrip()
+
+
+def collect_targets_and_states(n):
+    targets = [[None] * n for i in range(n)]
+    states = [[None] * n for i in range(n)]
+    for i in range(n):
+        speak_num = int(readline())
+        for j in range(speak_num):
+            targets[i][j], states[i][j] = map_readline()
+            targets[i][j] -= 1  # because index starts from not 1 but 0
+    return targets, states
+
+
+def make_boolean_list(num, n):
+    bin_num = bin(num)[2:]
+    bin_num = (n - len(bin_num)) * "0" + bin_num
+    boolean_list = list(map(int, bin_num))
+    boolean_list = boolean_list[::-1]
+    return boolean_list
+
+
+def is_valid_pattern(boolean_list, n, targets, states):
+    for i in range(n):
+        if (p >> i) & 1:
+            if not is_valid_speak(boolean_list, i, targets, states):
+                return False
+    return True
+
+
+def is_valid_speak(boolean_list, idx, targets, states):
+    for t, s in zip(targets[idx], states[idx]):
+        if t is None and s is None:
+            continue
+        if boolean_list[t] != s:
+            # print(boolean_list, idx, targets[idx]) # debug
+            return False
+        # else:
+            # print("idx", idx)  # debug
+            # print("targets", targets)  # debug
+            # print("states", states)  # debug
+            # print("boolean_list", boolean_list)  # debug
+            # print("boolean_list[t]", boolean_list[t])  # debug
+            # print("s", s, t)  # debug
+    # print("boolean_list", boolean_list, targets, states)  # debug
+    return True
+
+
+if __name__ == "__main__":
+    n = int(readline())
+    targets, states = collect_targets_and_states(n)
+
+    patterns = 2 ** n
+    max_cnt = 0
+    for p in range(patterns):
+        boolean_list = make_boolean_list(p, n)  # TODO
+        if is_valid_pattern(boolean_list, n, targets, states):
+            max_cnt = max(max_cnt, sum(boolean_list))
+    print(max_cnt)
