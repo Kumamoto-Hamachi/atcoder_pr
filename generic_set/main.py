@@ -1,5 +1,6 @@
 from pprint import pprint as pp
 from collections import defaultdict
+from itertools import permutations
 import sys
 sys.setrecursionlimit(10 ** 7)
 readline = sys.stdin.buffer.readline
