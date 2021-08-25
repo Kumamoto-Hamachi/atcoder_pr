@@ -1,4 +1,4 @@
-# atocoder_pr
+# atcoder_pr
 My solutions for Kyo-pro(Competitive programming) contests problems.
 
 Atcoderを中心とした競技プログラミングの精進録。
