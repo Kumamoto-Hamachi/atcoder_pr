@@ -40,12 +40,36 @@ abc89_c
 排他的論理和(XOR): ^
 ビット反転(NOT): ~
 ビットシフト: <<, >>
+[実例]
 abc128_c
 abc147_c #TODO 深さ優先探索と二重配列を使った別解 あと書きかけ
 abc167_c
 square869120Contest#4_b #TODO シンプルに解けない(別日に解くこと)
 ## 1.3 順列全探索
+itertools.permutations
+[実例]
 abc145_c
 abc150_c # コーナーケース(同じ,端等の変わったケースをちゃんと考えよう)
 abc54_c # TODO もう一回書いて
-## 1.4 再帰関数を用いた全探索
+## 1.4 再帰関数を用いた全探索(深さ優先探索)
+*参考文献
+[再帰関数を学ぶと、どんな世界が広がるか](https://qiita.com/drken/items/23a4f604fa3f505dd5ad)
+[動的計画法超入門！ Educational DP Contest の A ～ E 問題の解説と類題集](https://qiita.com/drken/items/dc53c683d6de8aeacf5a) # TODO
+
+```
+戻り値の型 func(引数) {
+  if (ベースケース) {
+    return ベースケースに対する値;
+  }
+
+  func(次の引数); // 再帰呼び出しします。その前後でも色々やります。
+  return (答え);
+}
+```
+複数再帰呼び出しを行うと,計算量が爆発する.
+メモ化
+[実例]
+sum_fibo_recursion.py
+再帰出ないと厳しい問題もある.
+例えば,(1)部分和問題(2)数独ソルバー(3)グラフ上の探索
+[実例]
